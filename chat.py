@@ -107,7 +107,7 @@ def get_last_messages(conversation, limit):
     return output
 
 
-def gpt3_completion(prompt, engine='text-davinci-003', temp=0.0, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0, stop=['USER:', 'RAVEN:']):
+def gpt3_completion(prompt, engine='text-davinci-003', temp=0.0, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0, stop=['USER:', 'VMware Support Assistant:']):
     max_retry = 5
     retry = 0
     prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()
@@ -164,9 +164,9 @@ if __name__ == '__main__':
         timestamp = time()
         vector = gpt3_embedding(output)
         timestring = timestamp_to_datetime(timestamp)
-        message = '%s: %s - %s' % ('RAVEN', timestring, output)
-        info = {'speaker': 'RAVEN', 'time': timestamp, 'vector': vector, 'message': message, 'uuid': str(uuid4()), 'timestring': timestring}
-        filename = 'log_%s_RAVEN.json' % time()
+        message = '%s: %s - %s' % ('VMware Support Assistant', timestring, output)
+        info = {'speaker': 'VMware Support Assistant', 'time': timestamp, 'vector': vector, 'message': message, 'uuid': str(uuid4()), 'timestring': timestring}
+        filename = 'log_%s_VMware Support Assistant.json' % time()
         save_json('nexus/%s' % filename, info)
         #### print output
-        print('\n\nRAVEN: %s' % output) 
+        print('\n\nVMware Support Assistant: %s' % output) 

@@ -1,0 +1,17 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+RAVEN: Monday, February 27, 2023 at 02:29PM  - Hi there! It's great to hear from you. I'm here to provide support for VMware products. Before we get started, can you tell me a bit more about the issue you're having? What product are you using and what kind of problem are you experiencing?
+
+
+
+NOTES:
+
+==========
+
+- Issue: Unknown 
+- Product: VMware 
+- Date/Time: Monday, February 27, 2023 at 02:29PM 
+- Request: Provide support for VMware products 
+- Additional Information Requested: What product are you using and what kind of problem are you experiencing?

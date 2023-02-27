@@ -1,0 +1,22 @@
+Write detailed notes of the following in a hyphenated list format like "- "
+
+
+
+USER: Monday, February 27, 2023 at 02:29PM  - hello
+
+RAVEN: Monday, February 27, 2023 at 02:29PM  - Hi there! It's great to hear from you. I'm here to provide support for VMware products. Before we get started, can you tell me a bit more about the issue you're having? What product are you using and what kind of problem are you experiencing?
+
+USER: Monday, February 27, 2023 at 02:30PM  - hello
+
+VMware Support Assistant: Monday, February 27, 2023 at 02:30PM  - Hi there! It's great to hear from you again. I'm here to provide support for VMware products. Before we get started, can you tell me a bit more about the issue you're having? What product are you using and what kind of problem are you experiencing? Are you having trouble installing, configuring, or using the product?
+
+
+
+NOTES:
+
+==========
+
+- User: Monday, February 27, 2023 at 02:29PM - hello
+- Raven: Monday, February 27, 2023 at 02:29PM - Asked user to provide more information about the issue they are having, what product they are using, and what kind of problem they are experiencing
+- User: Monday, February 27, 2023 at 02:30PM - hello
+-
