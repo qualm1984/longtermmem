@@ -148,9 +148,10 @@ def gpt3_completion(prompt, engine='text-davinci-003', temp=0.0, top_p=1.0, toke
 if __name__ == '__main__':
     openai.api_key = get_api_key()
     st.title("Chat with VMware Support Assistant")
+    user_input = st.text_input("Enter your message", key="user_input")
     while True:
         #### get user input, save it, vectorize it, etc
-        a = st.text_input('\n\nUSER: ')
+        a = user_input('\n\nUSER: ')
         timestamp = time()
         vector = gpt3_embedding(a)
         timestring = timestamp_to_datetime(timestamp)
