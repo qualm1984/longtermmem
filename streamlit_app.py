@@ -151,7 +151,7 @@ if __name__ == '__main__':
     user_input = st.text_input("Enter your message", key="user_input")
     while True:
         #### get user input, save it, vectorize it, etc
-         a = user_input
+        a = user_input
         #a = input('\n\nUSER: ')
         timestamp = time()
         vector = gpt3_embedding(a)
