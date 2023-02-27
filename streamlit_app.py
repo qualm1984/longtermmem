@@ -147,9 +147,10 @@ def gpt3_completion(prompt, engine='text-davinci-003', temp=0.0, top_p=1.0, toke
 
 if __name__ == '__main__':
     openai.api_key = get_api_key()
+    st.title("Chat with VMware Support Assistant")
     while True:
         #### get user input, save it, vectorize it, etc
-        a = input('\n\nUSER: ')
+        a = st.text_input('\n\nUSER: ')
         timestamp = time()
         vector = gpt3_embedding(a)
         timestring = timestamp_to_datetime(timestamp)
@@ -176,4 +177,4 @@ if __name__ == '__main__':
         filename = 'log_%s_VMware Support Assistant.json' % time()
         save_json('nexus/%s' % filename, info)
         #### print output
-        print('\n\nVMware Support Assistant: %s' % output) 
+        st.text_area('\n\nVMware Support Assistant: %s' % output) 
